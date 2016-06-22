@@ -145,7 +145,8 @@ public class MainActivity extends Activity {
             @Override
             public boolean onSuggestion(SearchItem searchItem) {
                 Log.d("onSuggestion", searchItem.getTitle());
-                return false;
+                onSearch(searchItem.getTitle());
+                return true;
             }
 
             @Override
